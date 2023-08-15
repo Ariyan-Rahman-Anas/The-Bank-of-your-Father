@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayMethod Bank Ltd.</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+    <!-- ============--- Tailwind and Daisy ui link(daisy ui used for dark mode) ---============ -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./img/3.png);" class="bg-no-repeat bg-cover bg-center" >
+    <main class="flex items-center justify-center h-full md:h-[100vh] mx-4 py-4">
+
+        <section id="home-section" class="w-[80] md:w-[65%] text-white">
+            <p class=" text-gray500 text-sm text-center"><span class="text-xl">Hey you,</span> the time waster and the laziest!<br>Do unlimited transaction by our system, because of this is</p>
+            <h1 id="greeting" class="text-center text-4xl font-semibold">The Bank of your Father <br>😂</h1>
+
+            <div class="bank-section-upper flex flex-col items-center justify-between mt-4 gap-y-2 md:flex-row">
+                <div class="deposit-display border-[.001rem] bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.4)] p-4 rounded-[.3rem] w-[80%] md:w-[32.3%]">
+                    <h1 class="text-2xl">Deposit</h1>
+                    <p class="text-2xl">$ <span  id="total-deposit">00</span></p>
+                </div>
+                <div class="withdraw-display border-[.001rem]  bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.4)] p-4 rounded-[.3rem] w-[80%] md:w-[32.3%]">
+                    <h1 class="text-2xl">Withdraw</h1>
+                    <p class="text-2xl">$ <span  id="total-withdraw">00</span></p>
+                </div>
+                <div class="balance-display border-[.001rem]  bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.4)] p-4 rounded-[.3rem] w-[80%] md:w-[32.3%]">
+                    <h1 class="text-2xl">Balance</h1>
+                    <p class="text-2xl">$ <span  id="total-balance">100</span></p>
+                </div>
+            </div>
+            <div class="bank-section-down flex flex-col items-center justify-between gap-y-2 mt-6 md:flex-row">
+                <div class="deposit border-[.001rem] bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.4)] w-[80%] md:w-[49%] p-4 rounded-[.3rem]">
+                    <h1 class="text-2xl">Please Deposit</h1>
+                    <input type="text" placeholder="Enter your depositing amount-$" id="deposit-input" class="w-full  mt-1 mb-4 p-1 rounded-[.2rem] outline-none focus:bg-gray-300 text-black"> <br>
+                    <button id="deposit-btn" class=" bg-white text-green-600 font-semibold py-2 px-4 rounded-[.3rem] hover:bg-green-500 hover:text-white">Deposit</button>
+                </div>
+                <div class="withdraw border-[.001rem] bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.4)] w-[80%] md:w-[49%] p-4 rounded-[.3rem]">
+                    <h1 class="text-2xl">Please Withdraw</h1>
+                    <input type="text" placeholder="Enter your withdrawal amount-$" id="withdraw-input" class="w-full mt-1 mb-4 p-1 rounded-[.2rem] outline-none focus:bg-gray-300 text-black"><br>
+                    <button id="withdraw-btn" class="text-red-600 bg-white font-semibold py-2 px-4 rounded-[.3rem] hover:bg-red-500 hover:text-white ">Withdraw</button>
+                </div>
+            </div>
+            <button id="logOut-btn" class="bg-red-500 text-white px-5 py-[.35rem] mt-[1.5rem] text-xl font-semibold rounded-[.3rem] block mx-auto hover:text-black ">Log out</button>
+        </section>
+    </main>
+
+    <!-- ===============--- Js file link ---=============== -->
+    <script src="./js file/bankHome.js"></script>
+</body>
+</html>

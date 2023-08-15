@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayMethod Bank Ltd.</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+    <!-- ============--- Tailwind and Daisy ui link(daisy ui used for dark mode) ---============ -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./img/1.png);" class="bg-no-repeat bg-cover bg-center" >
+    <main class="flex items-center justify-center h-[100vh] mx-4 py-4">
+        <section id="logIn-section" class="w-[80] md:w-[65%] p-8 bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.4)] rounded-[.3rem]">
+            <h1 class="text-3xl pb-8 font-semibold text-white">Welcome to PayMethod Bank Limited</h1>
+            <form action="#" class="">
+                <label for="email" class="block">
+                    <input type="email" id="user-email" name="email" placeholder="Enter your logger E-mail:" class="w-full bg- p-2 mb-4 rounded-[.3rem] focus:outline-none focus:bg-gray-300 text-lg">
+                </label>
+                
+                <label for="password" class="block">
+                    <input type="password" name="password" id="user-password" placeholder="Enter here the Password" class="w-full bg- p-2 mb-6 rounded-[.3rem] focus:outline-none focus:bg-gray-300 text-lg">
+                </label>
+            </form>
+            <button id="logIn-btn" class="bg-green-500 text-white px-5 py-[.35rem] text-xl font-semibold rounded-[.3rem] ">Log in</button>
+        </section>
+    </main>
+
+    <!-- ===============--- Js file link ---=============== -->
+    <script src="./js file/index.js"></script>
+</body>
+</html>
